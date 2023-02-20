@@ -1,0 +1,17 @@
+<%# action="/answer" %>
+<%# means after submitting we will get redirected to "answer" %>
+
+<%# name="question" %>
+<%# means everything typed in this field will be a "question" (in this app) %>
+<%# http://localhost:3000/answer?question=aaa %>
+
+<div class="container">
+  <h1 class="header" >Stupid Coaching</h1>
+  <p class="paragraph" >Ask your coach anything:</p>
+
+  <form action="/answer" data-turbo="false">
+    <input class="box" type="text" name="question" placeholder="Type your question here">
+    <input class="button" type="submit" value="Ask!">
+  </form>
+</div>
+<%# GET /answer?question=question_user_types %>
